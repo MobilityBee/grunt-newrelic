@@ -19,12 +19,12 @@
     "node": ">= 0.8.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "newrelic": "~0.9.19"
+    "grunt": "^0.4.5",
+    "newrelic": "^1.22.0"
   },
   "peerDependencies": {
-    "grunt": "~0.4.1",
-    "newrelic": "~0.9.19"
+    "grunt": "^0.4.5",
+    "newrelic": "^1.22.0"
   },
   "keywords": ["gruntplugin"]
 }
