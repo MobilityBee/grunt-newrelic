@@ -2,15 +2,17 @@
 
 module.exports = function(grunt) {
 	grunt.registerTask("newrelic", "generate a newrelic.js file", function(environment) {
-		var config_path = "config/" + environment + ".json";
+		var config_path;
 		var app_name;
 		var license_key;
 		var logging_level;
 		var newrelic_file;
 
-		if (environment === null) {
+		if (!environment) {
 			environment = "development";
 		}
+
+		config_path = "config/" + environment + ".json";
 
 		try {
 			var config_file = JSON.parse(grunt.file.read(config_path));
